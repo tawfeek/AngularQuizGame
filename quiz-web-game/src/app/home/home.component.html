@@ -1,0 +1,16 @@
+<div class="container bg-light py-5">
+    <h1 class="display-5 fw-bold">Welcome to Janjoon Quiz App</h1>
+    <p class="col-md-8 fs-4">This is an awesome quiz game to help you have some fun and knowledge</p>
+    <h3>Rules:</h3>
+    <ol>
+        <li>Correct Answer will give you 10 points</li>
+        <li>You should answer before the timer ends</li>
+    </ol>
+    <h1 style="font-family: cursive; text-align:center">Have Fun And Good Luck !</h1>
+    <div class="name col-md-4 my-3">
+        <label for="">Enter your name:</label>
+        <input #name type="text" class="form-control">
+    </div>
+    <button class="btn btn-primary btn-lg" routerLink="/question" (click)="start()">Start The Quiz</button>
+
+</div>

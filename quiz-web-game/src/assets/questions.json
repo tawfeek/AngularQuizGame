@@ -1,0 +1,592 @@
+
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What year was the game Team Fortress 2 released?",
+      "correct_answer": "2007",
+      "incorrect_answers": [
+        "2009",
+        "2005",
+        "2010"
+      ]
+    },
+    {
+      "category": "Vehicles",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "In 1993 Swedish car manufacturer Saab experimented with replacing the steering wheel with a joystick in a Saab 9000.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "category": "Science: Computers",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What does CPU stand for?",
+      "correct_answer": "Central Processing Unit",
+      "incorrect_answers": [
+        "Central Process Unit",
+        "Computer Personal Unit",
+        "Central Processor Unit"
+      ]
+    },
+    {
+      "category": "Geography",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "On a London Underground map, what colour is the Circle Line?",
+      "correct_answer": "Yellow",
+      "incorrect_answers": [
+        "Red",
+        "Blue",
+        "Green"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In past times, what would a gentleman keep in his fob pocket?",
+      "correct_answer": "Watch",
+      "incorrect_answers": [
+        "Money",
+        "Keys",
+        "Notebook"
+      ]
+    },
+    {
+      "category": "Geography",
+      "type": "boolean",
+      "difficulty": "medium",
+      "question": "Seoul is the capital of North Korea.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Rolex is a company that specializes in what type of product?",
+      "correct_answer": "Watches",
+      "incorrect_answers": [
+        "Cars",
+        "Computers",
+        "Sports equipment"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "boolean",
+      "difficulty": "medium",
+      "question": "There aren&#039;t any live-action clones in &quot;Star Wars: Episode III - Revenge of the Sith&quot;.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "category": "Entertainment: Books",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In the Lord of the Rings, who is the father of the dwarf Gimli?",
+      "correct_answer": "Gloin",
+      "incorrect_answers": [
+        "Thorin Oakenshield",
+        "Bombur",
+        "Dwalin"
+      ]
+    },
+    {
+      "category": "Science & Nature",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What common name is given to the medial condition, tibial stress syndrome (MTSS)?",
+      "correct_answer": "Shin Splints",
+      "incorrect_answers": [
+        "Tennis Elbow",
+        "Carpal Tunnel",
+        "Housemaid&#039;s Knee"
+      ]
+    },
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "On what day did Germany invade Poland?",
+      "correct_answer": "September 1, 1939",
+      "incorrect_answers": [
+        "December 7, 1941",
+        "June 22, 1941",
+        "July 7, 1937"
+      ]
+    },
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In what prison was Adolf Hitler held in 1924?",
+      "correct_answer": "Landsberg Prison",
+      "incorrect_answers": [
+        "Spandau Prison",
+        "Ebrach Abbey",
+        "Hohenasperg"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In Call of Duty: United Offensive, what two soldiers share a name of a video game character?",
+      "correct_answer": "Gordon &amp; Freeman",
+      "incorrect_answers": [
+        "Sam &amp; Fisher",
+        "Nathan &amp; Drake",
+        "Dig &amp; Dug"
+      ]
+    },
+    {
+      "category": "Entertainment: Musicals & Theatres",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In Shakespeare&#039;s play Julius Caesar, Caesar&#039;s last words were...",
+      "correct_answer": "Et tu, Brute? ",
+      "incorrect_answers": [
+        "Iacta alea est!",
+        "Vidi, vini, vici.",
+        "Aegri somnia vana."
+      ]
+    },
+    {
+      "category": "Vehicles",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which Variable Valve Timing technology is used by BMW?",
+      "correct_answer": "VANOS",
+      "incorrect_answers": [
+        "VVT-iw",
+        "VVEL",
+        "MultiAir"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "What was the first PlayStation game to require the use of the DualShock controller?",
+      "correct_answer": "Ape Escape",
+      "incorrect_answers": [
+        "Metal Gear",
+        "Tekken ",
+        "Tomba 2!"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the Star Trek universe, what color is Vulcan blood?",
+      "correct_answer": "Green",
+      "incorrect_answers": [
+        "Blue",
+        "Red",
+        "Purple"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "When did the TV show Rick and Morty first air on Adult Swim?",
+      "correct_answer": "2013",
+      "incorrect_answers": [
+        "2014",
+        "2016",
+        "2015"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "Kanye West at 2009 VMA&#039;s interrupted which celebrity?",
+      "correct_answer": "Taylor Swift",
+      "incorrect_answers": [
+        "MF DOOM",
+        "Beyonce",
+        "Beck"
+      ]
+    },
+    {
+      "category": "Animals",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which of these animals is NOT a lizard?",
+      "correct_answer": "Tuatara",
+      "incorrect_answers": [
+        "Komodo Dragon",
+        "Gila Monster",
+        "Green Iguana"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which famous 90&#039;s rap album is commonly referred to as &quot;The Bible of Hip Hop&quot;?",
+      "correct_answer": "Illmatic",
+      "incorrect_answers": [
+        "The Low End Theory",
+        "The Chronic",
+        "Enter The Wu-Tang (36 Chambers)"
+      ]
+    },
+    {
+      "category": "History",
+      "type": "boolean",
+      "difficulty": "hard",
+      "question": "The Battle of Trafalgar took place on October 23rd, 1805",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "category": "Vehicles",
+      "type": "boolean",
+      "difficulty": "medium",
+      "question": "The General Motors EV1 was the first street-legal production electric vehicle.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In what year did the First World War end?",
+      "correct_answer": "1918",
+      "incorrect_answers": [
+        "1914",
+        "1916",
+        "1912"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In Minecraft, which two items must be combined to craft a torch?",
+      "correct_answer": "Stick and Coal",
+      "incorrect_answers": [
+        "Stick and Fire",
+        "Wood and Coal",
+        "Wood and Fire"
+      ]
+    },
+    {
+      "category": "Entertainment: Japanese Anime & Manga",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Ikki Kurogane is known by what nickname at the beginning of &quot;Chivalry of a Failed Knight&quot;?",
+      "correct_answer": "Worst One",
+      "incorrect_answers": [
+        "Another One",
+        "Blazer",
+        "Princess"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "In &quot;Star Trek&quot;, what is the Ferengi&#039;s First Rule of Acquisition?",
+      "correct_answer": "Once you have their money, you never give it back. ",
+      "incorrect_answers": [
+        "Never place friendship above profit",
+        "Greed is Eternal",
+        "Never allow family to stand in the way of opportunity"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In &quot;Star Trek&quot;, who was the founder of the Klingon Empire and its philosophy?",
+      "correct_answer": "Kahless the Unforgettable",
+      "incorrect_answers": [
+        "Lady Lukara of the Great Hall",
+        "Molor the Unforgiving",
+        "Dahar Master Kor"
+      ]
+    },
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which of the following countries was the first to send an object into space?",
+      "correct_answer": "Germany",
+      "incorrect_answers": [
+        "USA",
+        "Russia",
+        "China"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "In &quot;Star Trek&quot;, what sauce is commonly used by Klingons on bregit lung?",
+      "correct_answer": "Grapok sauce",
+      "incorrect_answers": [
+        "Gazorpazorp pudding",
+        "Sweet chili sauce",
+        "Grapork sauce"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "According to the 2014-2015 Australian Bureau of Statistics, what percentage of Australians were born overseas?",
+      "correct_answer": "28%",
+      "incorrect_answers": [
+        "13%",
+        "20%",
+        "7%"
+      ]
+    },
+    {
+      "category": "Science: Gadgets",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Mobile hardware and software company &quot;Blackberry Limited&quot; was founded in which country?",
+      "correct_answer": "Canada",
+      "incorrect_answers": [
+        "Norway",
+        "United States of America",
+        "United Kingdom"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the boss round featured in the &quot;Call Of Duty: Zombies&quot; map &quot;Five&quot;?",
+      "correct_answer": "The Pentagon Thief",
+      "incorrect_answers": [
+        "Hellhounds",
+        "Jumping Jacks",
+        "Napalm Zombie"
+      ]
+    },
+    {
+      "category": "Entertainment: Film",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What was Bruce Campbell&#039;s iconic one-liner after getting a chainsaw hand in Evil Dead 2?",
+      "correct_answer": "Groovy.",
+      "incorrect_answers": [
+        "Gnarly.",
+        "Perfect.",
+        "Nice."
+      ]
+    },
+    {
+      "category": "Science: Computers",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What vulnerability ranked #1 on the OWASP Top 10 in 2013?",
+      "correct_answer": "Injection ",
+      "incorrect_answers": [
+        "Broken Authentication",
+        "Cross-Site Scripting",
+        "Insecure Direct Object References"
+      ]
+    },
+    {
+      "category": "Entertainment: Board Games",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Which ability from the &quot;Magic: The Gathering&quot; Scars of Mirrodin expansion involves having at least three artifacts in play?",
+      "correct_answer": "Metalcraft",
+      "incorrect_answers": [
+        "Affinity",
+        "Imprint",
+        "Living Weapon"
+      ]
+    },
+    {
+      "category": "Celebrities",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "Billy Herrington is from which US state?",
+      "correct_answer": "New York",
+      "incorrect_answers": [
+        "Arizona",
+        "California",
+        "Georgia"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "boolean",
+      "difficulty": "easy",
+      "question": "In &quot;Need for Speed: Porsche Unleashed&quot;, the player can only drive cars manufactured by Porsche.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In CoD: Black Ops III, what is the name of the rogue A.I. antagonist?",
+      "correct_answer": "Corvus",
+      "incorrect_answers": [
+        "Cabal",
+        "Legion",
+        "Icarus"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the official name of Prince&#039;s backing band?",
+      "correct_answer": "The Revolution",
+      "incorrect_answers": [
+        "The Paupers",
+        "The Wailers",
+        "The Heartbreakers"
+      ]
+    },
+    {
+      "category": "Entertainment: Musicals & Theatres",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "The musical &quot;Dirty Rotten Scoundrels&quot; is set in what country?",
+      "correct_answer": "France",
+      "incorrect_answers": [
+        "USA",
+        "Germany",
+        "Sweden"
+      ]
+    },
+    {
+      "category": "Geography",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "The Maluku islands (informally known as the Spice Islands) belong to which country?",
+      "correct_answer": "Indonesia",
+      "incorrect_answers": [
+        "Chile",
+        "New Zealand",
+        "Fiji"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Who was walking like an Egyptian in 1981?",
+      "correct_answer": "The Bangles",
+      "incorrect_answers": [
+        "R.E.M.",
+        "The Ocean Blue",
+        "The Connells"
+      ]
+    },
+    {
+      "category": "Entertainment: Music",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Rick Astley&#039;s hit song &quot;Never Gonna Give You Up&quot; was released in what year?",
+      "correct_answer": "1987",
+      "incorrect_answers": [
+        "1985",
+        "1986",
+        "1988"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "boolean",
+      "difficulty": "easy",
+      "question": "Vietnam&#039;s national flag is a red star in front of a yellow background.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "hard",
+      "question": "What is the weight of a Gold Bar in Fallout: New Vegas?",
+      "correct_answer": "35 Pounds",
+      "incorrect_answers": [
+        "30 Pounds",
+        "40 Pounds",
+        "32.50 Pounds"
+      ]
+    },
+    {
+      "category": "Sports",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of Manchester United&#039;s home stadium?",
+      "correct_answer": "Old Trafford",
+      "incorrect_answers": [
+        "Anfield",
+        "City of Manchester Stadium",
+        "St James Park"
+      ]
+    },
+    {
+      "category": "Entertainment: Television",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Out of the 3 Tots in Tots TV, who speaks French in the UK Version and Spanish in the US Version?",
+      "correct_answer": "Tilly",
+      "incorrect_answers": [
+        "Tom",
+        "Tiny",
+        "None of the Above"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the Video Game, Half-life, what type of US military force starts clearing out the Black Mesa Research Facility?",
+      "correct_answer": "The HECU",
+      "incorrect_answers": [
+        "Navy Seals",
+        "The Combine",
+        "The Marines"
+      ]
+    },
+    {
+      "category": "Entertainment: Cartoon & Animations",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "Which singer provided the voice of Metroid&#039;s Mother Brain in the animated series &quot;Captain N: The Game Master&quot;?",
+      "correct_answer": "Levi Stubbs",
+      "incorrect_answers": [
+        "Freddie Mercury",
+        "Janet Jackson",
+        "Joan Jett"
+      ]
+    }
+  ]
+}
