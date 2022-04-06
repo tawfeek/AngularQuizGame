@@ -13,17 +13,17 @@ export class QuestionComponent implements OnInit {
   public name: string = "";
   public questionsList: any = [];
   public questionsListMulti: Question[];
-  public questionsCounter: number = 1;
-  public arrayItemsCounter: number = 0;
+  public questionsCounter: number = 0;
   public currentQuestion: Question;
   public points: number = 0;
-  timeForEachQuestion : number = 15;
+  timeForEachQuestion: number = 60;
   timeCounter = this.timeForEachQuestion;
   tmpQuestion: Question;
   public numberOfMultiQuestions: number = 0;
-  correctAnswers : number = 0;
-  inCorrectAnswers : number = 0;
-  interval$:any;
+  correctAnswers: number = 0;
+  inCorrectAnswers: number = 0;
+  interval$: any;
+  progress: string = "0";
 
 
   constructor(private questionService: QuestionService) { }
@@ -32,6 +32,7 @@ export class QuestionComponent implements OnInit {
     this.name = localStorage.getItem('name')!;
     this.questionsCounter = 0;
     this.getAllQuestions();
+    this.startWatch();
   }
 
   getAllQuestions() {
@@ -41,60 +42,86 @@ export class QuestionComponent implements OnInit {
     this.questionService.getQuestions()
       .subscribe(res => {
         res.results.forEach(item => {
-          if (item.type == "multiple") {
+         // if (item.type == "multiple") {
             this.tmpQuestion = new Question(item.category, item.type, item.difficulty,
               item.question, item.correct_answer, item.incorrect_answers);
             this.questionsListMulti.push(this.tmpQuestion);
             this.numberOfMultiQuestions++;
-          }
+         // }
         })
         this.nextQuestion();
       });
   }
 
   nextQuestion() {
-    this.currentQuestion = this.questionsListMulti[this.questionsCounter];
-    //this.currentQuestion.answersToDisplay();
-    this.questionsCounter++;
+    setTimeout(()=>{
+      this.currentQuestion = this.questionsListMulti[this.questionsCounter];
+      this.questionsCounter++;
+      this.getProgressPercentage();
+    }, 500);
+
   }
 
-  checkAncswer(answer){
-    if(answer == this.currentQuestion.correct_answer){
+  checkAncswer(answer) {
+    if (answer == this.currentQuestion.correct_answer) {
       this.points += 10;
       this.correctAnswers++;
       this.timeCounter = this.timeForEachQuestion;
       this.nextQuestion();
+      return true;
     }
-    else
-    {
+    else {
       this.inCorrectAnswers++;
       this.nextQuestion();
+      return false;
     }
   }
 
-  startWatch(){
+  changeColorOfTheClickedAnswerAccordingly(answer){
+    return answer == this.currentQuestion.correct_answer
+  }
+
+  startWatch() {
     this.interval$ = interval(1000)
-    .subscribe(value => {
-      this.timeCounter --;
-      if(this.timeCounter == 0){
-        this.nextQuestion();
-      }
-    });
-    setTimeout(()=> {
+      .subscribe(value => {
+        this.timeCounter--;
+        if (this.timeCounter == 0) {
+          this.nextQuestion();
+          this.timeCounter = this.timeForEachQuestion;
+        }
+      });
+    setTimeout(() => {
       this.interval$.unsubscribe();
     }, 600000);
 
   }
 
-  stopWatch(){
+  stopWatch() {
     this.interval$.unsubscribe();
     this.timeCounter = 0;
   }
 
-  resetWatch(){
+  resetWatch() {
     this.startWatch();
     this.timeCounter = this.timeForEachQuestion;
     this.startWatch();
+  }
+
+  resetQuiz() {
+    this.resetWatch();
+    this.getAllQuestions();
+    this.questionsCounter = 0;
+    this.correctAnswers = 0;
+    this.inCorrectAnswers = 0;
+    this.progress = "0";
+  }
+
+  getProgressPercentage() {
+    this.progress = ((this.questionsCounter / this.questionsListMulti.length) * 100).toString();
+  }
+
+  setTheTime(){
+    
   }
 
 }
