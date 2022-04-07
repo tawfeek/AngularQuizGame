@@ -8,6 +8,7 @@ import { QuestionComponent } from './question/question.component';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ChangeAnswerColorDirective } from './change-answer-color.directive';
+import { ResultsComponent } from './results/results.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ChangeAnswerColorDirective } from './change-answer-color.directive';
     HomeComponent,
     QuestionComponent,
     HeaderComponent,
-    ChangeAnswerColorDirective
+    ChangeAnswerColorDirective,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,

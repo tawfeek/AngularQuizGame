@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { interval } from 'rxjs';
 import { Question } from '../models/question';
 import { QuestionService } from '../services/question.service';
@@ -24,9 +25,11 @@ export class QuestionComponent implements OnInit {
   inCorrectAnswers: number = 0;
   interval$: any;
   progress: string = "0";
+  numberOfQuestionToDisplay: number = 5;
+  isQuizCompleted: Boolean = false;
 
 
-  constructor(private questionService: QuestionService) { }
+  constructor(private questionService: QuestionService, private route: Router) { }
 
   ngOnInit(): void {
     this.name = localStorage.getItem('name')!;
@@ -42,23 +45,31 @@ export class QuestionComponent implements OnInit {
     this.questionService.getQuestions()
       .subscribe(res => {
         res.results.forEach(item => {
-         // if (item.type == "multiple") {
-            this.tmpQuestion = new Question(item.category, item.type, item.difficulty,
-              item.question, item.correct_answer, item.incorrect_answers);
-            this.questionsListMulti.push(this.tmpQuestion);
-            this.numberOfMultiQuestions++;
-         // }
+          // if (item.type == "multiple") {
+          this.tmpQuestion = new Question(item.category, item.type, item.difficulty,
+            item.question, item.correct_answer, item.incorrect_answers);
+          this.questionsListMulti.push(this.tmpQuestion);
+          this.numberOfMultiQuestions++;
+          // }
         })
         this.nextQuestion();
       });
   }
 
   nextQuestion() {
-    setTimeout(()=>{
-      this.currentQuestion = this.questionsListMulti[this.questionsCounter];
-      this.questionsCounter++;
-      this.getProgressPercentage();
-    }, 500);
+
+    if (this.questionsCounter == (this.numberOfQuestionToDisplay - 1)) {
+        this.isQuizCompleted = true;
+        this.stopWatch();
+    
+    }
+    else {
+      setTimeout(() => {
+        this.currentQuestion = this.questionsListMulti[this.questionsCounter];
+        this.questionsCounter++;
+        this.getProgressPercentage();
+      }, 500);
+    }
 
   }
 
@@ -77,7 +88,7 @@ export class QuestionComponent implements OnInit {
     }
   }
 
-  changeColorOfTheClickedAnswerAccordingly(answer){
+  changeColorOfTheClickedAnswerAccordingly(answer) {
     return answer == this.currentQuestion.correct_answer
   }
 
@@ -102,6 +113,7 @@ export class QuestionComponent implements OnInit {
   }
 
   resetWatch() {
+    this.isQuizCompleted = false;
     this.startWatch();
     this.timeCounter = this.timeForEachQuestion;
     this.startWatch();
@@ -117,11 +129,7 @@ export class QuestionComponent implements OnInit {
   }
 
   getProgressPercentage() {
-    this.progress = ((this.questionsCounter / this.questionsListMulti.length) * 100).toString();
-  }
-
-  setTheTime(){
-    
+    this.progress = ((this.questionsCounter / this.numberOfQuestionToDisplay) * 100).toString();
   }
 
 }
