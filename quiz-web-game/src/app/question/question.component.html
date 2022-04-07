@@ -58,10 +58,12 @@
             <div class="row d-flex justify-content-between">
                 <img style="width: 50%;" class="img-fluid col-sm-12 mx-auto" src="../../assets/finish_quiz.png" alt="">
                 <div class="result text-center col-md-6 col-sm-12">
-                    <h3>Congratulations !!!, You Completed the Quiz.<br> Please see results below:</h3>
+                    <h3>Congratulations !!!<br> You Completed the Quiz.<br> Please see results below:</h3>
                     <p>Total Questions Displayed: {{numberOfQuestionToDisplay}}</p>
                     <p>Total Correct Answers: {{correctAnswers}} </p>
                     <p>Your Score: {{points}}</p>
+
+                    <button class="btn btn-primary btn-lg" routerLink="/question" (click)="resetQuiz()">Play Again</button>
 
 
                 </div>

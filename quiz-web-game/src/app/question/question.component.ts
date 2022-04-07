@@ -25,7 +25,7 @@ export class QuestionComponent implements OnInit {
   inCorrectAnswers: number = 0;
   interval$: any;
   progress: string = "0";
-  numberOfQuestionToDisplay: number = 5;
+  numberOfQuestionToDisplay: number = 10;
   isQuizCompleted: Boolean = false;
 
 
@@ -52,13 +52,14 @@ export class QuestionComponent implements OnInit {
           this.numberOfMultiQuestions++;
           // }
         })
+        this.questionsListMulti=this.randomArrayShuffle(this.questionsListMulti);
         this.nextQuestion();
       });
   }
 
   nextQuestion() {
 
-    if (this.questionsCounter == (this.numberOfQuestionToDisplay - 1)) {
+    if (this.questionsCounter == (this.numberOfQuestionToDisplay)) {
         this.isQuizCompleted = true;
         this.stopWatch();
     
@@ -75,6 +76,7 @@ export class QuestionComponent implements OnInit {
 
   checkAncswer(answer) {
     if (answer == this.currentQuestion.correct_answer) {
+      this.resetWatch();
       this.points += 10;
       this.correctAnswers++;
       this.timeCounter = this.timeForEachQuestion;
@@ -82,6 +84,7 @@ export class QuestionComponent implements OnInit {
       return true;
     }
     else {
+      this.resetWatch();
       this.inCorrectAnswers++;
       this.nextQuestion();
       return false;
@@ -114,22 +117,35 @@ export class QuestionComponent implements OnInit {
 
   resetWatch() {
     this.isQuizCompleted = false;
-    this.startWatch();
+    this.stopWatch();
     this.timeCounter = this.timeForEachQuestion;
     this.startWatch();
   }
 
-  resetQuiz() {
+  resetQuiz(){
     this.resetWatch();
     this.getAllQuestions();
     this.questionsCounter = 0;
     this.correctAnswers = 0;
     this.inCorrectAnswers = 0;
     this.progress = "0";
+    this.points = 0;
   }
 
   getProgressPercentage() {
     this.progress = ((this.questionsCounter / this.numberOfQuestionToDisplay) * 100).toString();
   }
+
+  randomArrayShuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+    while (0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+    return array;
+}
 
 }
