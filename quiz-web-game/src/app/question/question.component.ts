@@ -47,18 +47,25 @@ export class QuestionComponent implements OnInit {
         res.results.forEach(item => {
           // if (item.type == "multiple") {
           this.tmpQuestion = new Question(item.category, item.type, item.difficulty,
-            item.question, item.correct_answer, item.incorrect_answers);
+          item.question, item.correct_answer, item.incorrect_answers);
           this.questionsListMulti.push(this.tmpQuestion);
           this.numberOfMultiQuestions++;
           // }
         })
         this.questionsListMulti=this.randomArrayShuffle(this.questionsListMulti);
-        this.nextQuestion();
+        this.firstQuestion();
       });
   }
 
-  nextQuestion() {
+  firstQuestion(){
+    if (this.questionsCounter == 0) {
+      this.currentQuestion = this.questionsListMulti[this.questionsCounter];
+      this.questionsCounter++;
+      this.getProgressPercentage();
+    }
+  }
 
+  nextQuestion() {
     if (this.questionsCounter == (this.numberOfQuestionToDisplay)) {
         this.isQuizCompleted = true;
         this.stopWatch();
